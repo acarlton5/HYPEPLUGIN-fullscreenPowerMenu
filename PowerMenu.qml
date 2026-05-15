@@ -25,7 +25,7 @@ PluginComponent {
     }
 
     // -------------------------------------------------------------------------
-    // IPC — trigger via: dms ipc fullscreenPowerMenu toggle
+    // IPC — trigger via: hype ipc fullscreenPowerMenu toggle
     // -------------------------------------------------------------------------
 
     IpcHandler {
@@ -231,7 +231,7 @@ PluginComponent {
                         iconImageSource: "https://raw.githubusercontent.com/AvengeMedia/DankMaterialShell/f2df53afcd0870445e7f3cd45e91ac135a04442e/assets/danklogo.svg"
                         accentColor: "#FDE047"
                         bgColor: Qt.rgba(0.99, 0.88, 0.28, 0.2)
-                        onActivated: runCmd(dmsRestartProc, "dmsRestartCommand", "dms restart")
+                        onActivated: runCmd(dmsRestartProc, "dmsRestartCommand", "hype restart")
                     }
 
                     PowerButton {
@@ -649,6 +649,6 @@ PluginComponent {
     }
 
     Component.onCompleted: {
-        console.info("fullscreenPowerMenu: daemon loaded — use 'dms ipc call fullscreenPowerMenu toggle' to open");
+        console.info("fullscreenPowerMenu: daemon loaded — use 'hype ipc call fullscreenPowerMenu toggle' to open");
     }
 }

@@ -464,7 +464,7 @@ PluginSettings {
                     title: "Restart DMS Command"
                     description: "Command to restart the shell."
                     settingKey: "dmsRestartCommand"
-                    defaultValue: "dms restart"
+                    defaultValue: "hype restart"
                 }
             }
         }
